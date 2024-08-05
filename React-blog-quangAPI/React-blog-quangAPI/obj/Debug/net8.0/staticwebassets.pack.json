@@ -1,0 +1,29 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\React-blog-quang-main\\React-blog-quangAPI\\React-blog-quangAPI\\wwwroot\\images\\tải xuống_02c32e20-3be1-42c1-b6e7-42a235e071c3.jpg",
+      "PackagePath": "staticwebassets\\images\\tải xuống_02c32e20-3be1-42c1-b6e7-42a235e071c3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\React-blog-quang-main\\React-blog-quangAPI\\React-blog-quangAPI\\wwwroot\\images\\tải xuống_59e7770a-23a7-4e4f-a3f2-8c3f30f97368.jpg",
+      "PackagePath": "staticwebassets\\images\\tải xuống_59e7770a-23a7-4e4f-a3f2-8c3f30f97368.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.React-blog-quangAPI.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.React-blog-quangAPI.props",
+      "PackagePath": "build\\React-blog-quangAPI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.React-blog-quangAPI.props",
+      "PackagePath": "buildMultiTargeting\\React-blog-quangAPI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.React-blog-quangAPI.props",
+      "PackagePath": "buildTransitive\\React-blog-quangAPI.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

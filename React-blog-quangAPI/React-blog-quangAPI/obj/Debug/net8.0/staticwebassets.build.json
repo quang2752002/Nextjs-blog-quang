@@ -1,0 +1,19 @@
+{
+  "Version": 1,
+  "Hash": "ZWJWnGPiWJZF2VPSPlN27FBkoKTE+P7e7uOYxI/8ZWE=",
+  "Source": "React-blog-quangAPI",
+  "BasePath": "_content/React-blog-quangAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "React-blog-quangAPI\\wwwroot",
+      "Source": "React-blog-quangAPI",
+      "ContentRoot": "D:\\nextjs\\project1\\React-blog-quangAPI\\React-blog-quangAPI\\wwwroot\\",
+      "BasePath": "_content/React-blog-quangAPI",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": []
+}
