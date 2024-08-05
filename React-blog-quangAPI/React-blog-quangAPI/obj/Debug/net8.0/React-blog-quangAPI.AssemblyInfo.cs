@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("React-blog-quangAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b036043f7902c5b9df41254543268aee665d6bb4")]
 [assembly: System.Reflection.AssemblyProductAttribute("React-blog-quangAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("React-blog-quangAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

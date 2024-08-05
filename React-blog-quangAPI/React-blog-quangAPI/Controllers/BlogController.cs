@@ -10,15 +10,13 @@ namespace React_blog_quangAPI.Controllers
     [ApiController]
     public class BlogController : ControllerBase
     {
-        private const string IdBlog = "IdBlog";
 
         [HttpGet]
         [Route("getList")]
-        public async Task<IActionResult> Showlist([FromQuery] string name = "")
+        public async Task<IActionResult> Showlist([FromQuery] string name = "")// lấy danh sách blog và tìm kiếm
         {
             BlogDAO blogDAO = new BlogDAO();
 
-            // Search blogs based on the name query parameter
             var query = blogDAO.Search(name);
 
             return Ok(new { data = query });
@@ -39,9 +37,9 @@ namespace React_blog_quangAPI.Controllers
         }
         [HttpPost]
         [Route("Create")]
-        public async Task<IActionResult> Create([FromForm] BlogDTO formData)
+        public async Task<IActionResult> Create([FromForm] BlogDTO formData)// thêm mới blog
         {
-            if (string.IsNullOrWhiteSpace(formData.name) || formData.Idtype <= 0 || formData.arr == null ||
+            if (string.IsNullOrWhiteSpace(formData.name) || formData.Idtype <= 0 || formData.arr == null || //kiểm tra dữ liệu đầu vào
                 formData.arr.Length == 0 || formData.date == default || string.IsNullOrWhiteSpace(formData.note) ||
                 string.IsNullOrWhiteSpace(formData.detail))
             {
@@ -50,7 +48,7 @@ namespace React_blog_quangAPI.Controllers
 
             try
             {
-                BlogDAO blogDAO = new BlogDAO();
+                BlogDAO blogDAO = new BlogDAO();       
                 BLogLocationDAO blogLocationDAO = new BLogLocationDAO();
                 Blog blog = new Blog
                 {
@@ -62,14 +60,14 @@ namespace React_blog_quangAPI.Controllers
                     Detail = formData.detail
                 };
 
-                blogDAO.InsertOrUpdate(blog);
+                blogDAO.InsertOrUpdate(blog); //thêm mới blog
 
                 if (blog.Id <= 0)
                 {
                     return StatusCode(500, new { message = "Lỗi khi thêm blog." });
                 }
 
-                foreach (var locationId in formData.arr)
+                foreach (var locationId in formData.arr)   // thêm mới blogLocatiob
                 {
                     BlogLocation blogLocation = new BlogLocation
                     {
@@ -90,7 +88,7 @@ namespace React_blog_quangAPI.Controllers
 
         [HttpPatch]
         [Route("Update")]
-        public async Task<IActionResult> Update([FromForm] int id, [FromForm] BlogDTO formData)//chỉnh sửa  blog
+        public async Task<IActionResult> Update([FromForm] int id, [FromForm] BlogDTO formData)//chỉnh sửa blog
         {
 
             BlogDAO blogDAO = new BlogDAO();
@@ -142,7 +140,7 @@ namespace React_blog_quangAPI.Controllers
         }
         [HttpGet]
         [Route("getListLocation")]
-        public async Task<IActionResult> listLocation() //list location
+        public async Task<IActionResult> listLocation() //lấy danh sách location
         {
             LocationDAO locationDAO = new LocationDAO();
             var query = locationDAO.Search();
@@ -152,7 +150,7 @@ namespace React_blog_quangAPI.Controllers
 
         [HttpGet]
         [Route("getListType")]
-        public async Task<IActionResult> getListType()
+        public async Task<IActionResult> getListType() // lấy danh sách loại
         {
             TypeDAO typeDAO = new TypeDAO();
 
@@ -165,7 +163,7 @@ namespace React_blog_quangAPI.Controllers
 
         [HttpPost]
         [Route("Upload")]
-        public async Task<IActionResult> Upload([FromForm] IFormFile Image)
+        public async Task<IActionResult> Upload([FromForm] IFormFile Image)  //thêm ảnh
         {
             try
             {

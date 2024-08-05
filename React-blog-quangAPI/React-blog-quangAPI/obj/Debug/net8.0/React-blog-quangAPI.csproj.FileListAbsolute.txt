@@ -422,3 +422,4 @@ D:\nextjs\project1\React-blog-quangAPI\React-blog-quangAPI\obj\Debug\net8.0\scop
 D:\nextjs\project1\React-blog-quangAPI\React-blog-quangAPI\obj\Debug\net8.0\React-bl.5505E2AD.Up2Date
 D:\nextjs\project1\React-blog-quangAPI\React-blog-quangAPI\obj\Debug\net8.0\React-blog-quangAPI.genruntimeconfig.cache
 D:\nextjs\project1\React-blog-quangAPI\React-blog-quangAPI\obj\Debug\net8.0\ref\React-blog-quangAPI.dll
+D:\nextjs\project1\React-blog-quangAPI\React-blog-quangAPI\obj\Debug\net8.0\React-blog-quangAPI.sourcelink.json

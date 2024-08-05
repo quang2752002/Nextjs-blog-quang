@@ -18,11 +18,11 @@ const CreateBlogForm = () => {
   const [locations, setLocations] = useState<Location[]>([]);
   const [types, setTypes] = useState<Type[]>([]);
 
-  // Create a ref for the form element
   const formRef = useRef<HTMLFormElement>(null);
 
   useEffect(() => {
     const fetchLocations = async () => {
+      //lấy danh sách location
       try {
         const response = await axios.get(
           "https://localhost:7089/api/Blog/getListLocation"
@@ -35,6 +35,7 @@ const CreateBlogForm = () => {
     };
 
     const fetchTypes = async () => {
+      // lấy danh sách type
       try {
         const response = await axios.get(
           "https://localhost:7089/api/Blog/getListType"
@@ -76,6 +77,8 @@ const CreateBlogForm = () => {
 
     try {
       await axios.post("https://localhost:7089/api/Blog/Create", formData, {
+        //thêm mới blog
+
         headers: {
           "Content-Type": "multipart/form-data",
         },
@@ -88,6 +91,7 @@ const CreateBlogForm = () => {
   };
 
   const handleClear = () => {
+    //clear dữ liệu đã nhập
     if (formRef.current) {
       formRef.current.reset();
       setName("");
@@ -235,8 +239,16 @@ const CreateBlogForm = () => {
           </div>
 
           <div className="text-center my-4">
-            <button type="submit" className="btn btn-success mx-2">Create Blog</button>
-            <button type="button" onClick={handleClear} className="btn btn-primary mx-2">Clear</button>
+            <button type="submit" className="btn btn-success mx-2">
+              Create Blog
+            </button>
+            <button
+              type="button"
+              onClick={handleClear}
+              className="btn btn-primary mx-2"
+            >
+              Clear
+            </button>
           </div>
         </form>
         <ToastContainer />

@@ -3,16 +3,28 @@
   "WorkspaceRootPath": "D:\\nextjs\\project1\\React-blog-quangAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E9762B51-5177-430B-A658-34D04BA33949}|React-blog-quangAPI\\React-blog-quangAPI.csproj|d:\\nextjs\\project1\\react-blog-quangapi\\react-blog-quangapi\\models\\dto\\blogdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E9762B51-5177-430B-A658-34D04BA33949}|React-blog-quangAPI\\React-blog-quangAPI.csproj|solutionrelative:react-blog-quangapi\\models\\dto\\blogdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E9762B51-5177-430B-A658-34D04BA33949}|React-blog-quangAPI\\React-blog-quangAPI.csproj|d:\\nextjs\\project1\\react-blog-quangapi\\react-blog-quangapi\\controllers\\blogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E9762B51-5177-430B-A658-34D04BA33949}|React-blog-quangAPI\\React-blog-quangAPI.csproj|solutionrelative:react-blog-quangapi\\controllers\\blogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{E9762B51-5177-430B-A658-34D04BA33949}|React-blog-quangAPI\\React-blog-quangAPI.csproj|d:\\nextjs\\project1\\react-blog-quangapi\\react-blog-quangapi\\models\\dao\\locationdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9762B51-5177-430B-A658-34D04BA33949}|React-blog-quangAPI\\React-blog-quangAPI.csproj|solutionrelative:react-blog-quangapi\\models\\dao\\locationdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9762B51-5177-430B-A658-34D04BA33949}|React-blog-quangAPI\\React-blog-quangAPI.csproj|d:\\nextjs\\project1\\react-blog-quangapi\\react-blog-quangapi\\models\\dao\\typedao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9762B51-5177-430B-A658-34D04BA33949}|React-blog-quangAPI\\React-blog-quangAPI.csproj|solutionrelative:react-blog-quangapi\\models\\dao\\typedao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9762B51-5177-430B-A658-34D04BA33949}|React-blog-quangAPI\\React-blog-quangAPI.csproj|d:\\nextjs\\project1\\react-blog-quangapi\\react-blog-quangapi\\models\\dao\\bloglocationdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9762B51-5177-430B-A658-34D04BA33949}|React-blog-quangAPI\\React-blog-quangAPI.csproj|solutionrelative:react-blog-quangapi\\models\\dao\\bloglocationdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E9762B51-5177-430B-A658-34D04BA33949}|React-blog-quangAPI\\React-blog-quangAPI.csproj|d:\\nextjs\\project1\\react-blog-quangapi\\react-blog-quangapi\\models\\dao\\blogdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E9762B51-5177-430B-A658-34D04BA33949}|React-blog-quangAPI\\React-blog-quangAPI.csproj|solutionrelative:react-blog-quangapi\\models\\dao\\blogdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9762B51-5177-430B-A658-34D04BA33949}|React-blog-quangAPI\\React-blog-quangAPI.csproj|d:\\nextjs\\project1\\react-blog-quangapi\\react-blog-quangapi\\models\\dto\\blogdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9762B51-5177-430B-A658-34D04BA33949}|React-blog-quangAPI\\React-blog-quangAPI.csproj|solutionrelative:react-blog-quangapi\\models\\dto\\blogdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E9762B51-5177-430B-A658-34D04BA33949}|React-blog-quangAPI\\React-blog-quangAPI.csproj|d:\\nextjs\\project1\\react-blog-quangapi\\react-blog-quangapi\\models\\view\\blogview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -38,11 +50,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LocationDAO.cs",
+              "DocumentMoniker": "D:\\nextjs\\project1\\React-blog-quangAPI\\React-blog-quangAPI\\Models\\DAO\\LocationDAO.cs",
+              "RelativeDocumentMoniker": "React-blog-quangAPI\\Models\\DAO\\LocationDAO.cs",
+              "ToolTip": "D:\\nextjs\\project1\\React-blog-quangAPI\\React-blog-quangAPI\\Models\\DAO\\LocationDAO.cs",
+              "RelativeToolTip": "React-blog-quangAPI\\Models\\DAO\\LocationDAO.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-05T07:36:45.949Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TypeDAO.cs",
+              "DocumentMoniker": "D:\\nextjs\\project1\\React-blog-quangAPI\\React-blog-quangAPI\\Models\\DAO\\TypeDAO.cs",
+              "RelativeDocumentMoniker": "React-blog-quangAPI\\Models\\DAO\\TypeDAO.cs",
+              "ToolTip": "D:\\nextjs\\project1\\React-blog-quangAPI\\React-blog-quangAPI\\Models\\DAO\\TypeDAO.cs",
+              "RelativeToolTip": "React-blog-quangAPI\\Models\\DAO\\TypeDAO.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAAgwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-05T07:36:43.31Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "BLogLocationDAO.cs",
+              "DocumentMoniker": "D:\\nextjs\\project1\\React-blog-quangAPI\\React-blog-quangAPI\\Models\\DAO\\BLogLocationDAO.cs",
+              "RelativeDocumentMoniker": "React-blog-quangAPI\\Models\\DAO\\BLogLocationDAO.cs",
+              "ToolTip": "D:\\nextjs\\project1\\React-blog-quangAPI\\React-blog-quangAPI\\Models\\DAO\\BLogLocationDAO.cs",
+              "RelativeToolTip": "React-blog-quangAPI\\Models\\DAO\\BLogLocationDAO.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-05T07:36:38.082Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "BlogVIEW.cs",
               "DocumentMoniker": "D:\\nextjs\\project1\\React-blog-quangAPI\\React-blog-quangAPI\\Models\\VIEW\\BlogVIEW.cs",
               "RelativeDocumentMoniker": "React-blog-quangAPI\\Models\\VIEW\\BlogVIEW.cs",
@@ -54,7 +105,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "BlogDTO.cs",
               "DocumentMoniker": "D:\\nextjs\\project1\\React-blog-quangAPI\\React-blog-quangAPI\\Models\\DTO\\BlogDTO.cs",
               "RelativeDocumentMoniker": "React-blog-quangAPI\\Models\\DTO\\BlogDTO.cs",
@@ -67,32 +118,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "BlogController.cs",
               "DocumentMoniker": "D:\\nextjs\\project1\\React-blog-quangAPI\\React-blog-quangAPI\\Controllers\\BlogController.cs",
               "RelativeDocumentMoniker": "React-blog-quangAPI\\Controllers\\BlogController.cs",
               "ToolTip": "D:\\nextjs\\project1\\React-blog-quangAPI\\React-blog-quangAPI\\Controllers\\BlogController.cs",
               "RelativeToolTip": "React-blog-quangAPI\\Controllers\\BlogController.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAmwF0AAAAIAAAA",
+              "ViewState": "AQIAAJUAAAAAAAAAAAAswKUAAABXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-02T09:14:22.529Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "BlogDAO.cs",
               "DocumentMoniker": "D:\\nextjs\\project1\\React-blog-quangAPI\\React-blog-quangAPI\\Models\\DAO\\BlogDAO.cs",
               "RelativeDocumentMoniker": "React-blog-quangAPI\\Models\\DAO\\BlogDAO.cs",
               "ToolTip": "D:\\nextjs\\project1\\React-blog-quangAPI\\React-blog-quangAPI\\Models\\DAO\\BlogDAO.cs",
               "RelativeToolTip": "React-blog-quangAPI\\Models\\DAO\\BlogDAO.cs",
-              "ViewState": "AQIAAC4AAAAAAAAAAAAkwE8AAAAsAAAA",
+              "ViewState": "AQIAAEYAAAAAAAAAAAAkwE8AAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-02T09:05:41.12Z"
+              "WhenOpened": "2024-08-02T09:05:41.12Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "BlogLocation.cs",
               "DocumentMoniker": "D:\\nextjs\\project1\\React-blog-quangAPI\\React-blog-quangAPI\\Models\\Models\\BlogLocation.cs",
               "RelativeDocumentMoniker": "React-blog-quangAPI\\Models\\Models\\BlogLocation.cs",
@@ -104,7 +156,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "Location.cs",
               "DocumentMoniker": "D:\\nextjs\\project1\\React-blog-quangAPI\\React-blog-quangAPI\\Models\\Models\\Location.cs",
               "RelativeDocumentMoniker": "React-blog-quangAPI\\Models\\Models\\Location.cs",
@@ -116,7 +168,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "Blog.cs",
               "DocumentMoniker": "D:\\nextjs\\project1\\React-blog-quangAPI\\React-blog-quangAPI\\Models\\Models\\Blog.cs",
               "RelativeDocumentMoniker": "React-blog-quangAPI\\Models\\Models\\Blog.cs",

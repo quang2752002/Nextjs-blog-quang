@@ -5,8 +5,8 @@ import axios from "axios";
 import { Location } from "@/models/Location";
 import { Type } from "@/models/Type";
 import { Props } from "@/models/Props";
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const UpdateBlogForm: React.FC<Props> = ({ params }) => {
   const id = params.slug;
@@ -21,7 +21,6 @@ const UpdateBlogForm: React.FC<Props> = ({ params }) => {
   const [locations, setLocations] = useState<Location[]>([]);
   const [types, setTypes] = useState<Type[]>([]);
 
-  // Store initial state
   const [initialState, setInitialState] = useState({
     name: "",
     idType: 0,
@@ -37,12 +36,13 @@ const UpdateBlogForm: React.FC<Props> = ({ params }) => {
       const fetchBlog = async () => {
         try {
           const response = await axios.get(
+            //lấy thông tin blog theo id
             `https://localhost:7089/api/Blog/getBlog/${id}`
           );
           const blog = response.data.data;
           const arr = response.data.arr;
 
-          // Convert date
+          // Convert ngày tháng
           const formattedDate = new Date(blog.Date).toISOString().split("T")[0];
 
           const initialBlogState = {
@@ -60,8 +60,8 @@ const UpdateBlogForm: React.FC<Props> = ({ params }) => {
           setName(blog.Name);
           setIdType(blog.IdType);
           setState(blog.State);
-          setArr(arr || []); // Ensure arr is always an array
-          setDate(formattedDate); // Set date in YYYY-MM-DD format
+          setArr(arr || []);
+          setDate(formattedDate);
           setNote(blog.Note);
           setDetail(blog.Detail);
 
@@ -77,6 +77,7 @@ const UpdateBlogForm: React.FC<Props> = ({ params }) => {
     const fetchLocations = async () => {
       try {
         const response = await axios.get(
+          // lấy danh sách location
           "https://localhost:7089/api/Blog/getListLocation"
         );
         setLocations(response.data.data);
@@ -88,6 +89,7 @@ const UpdateBlogForm: React.FC<Props> = ({ params }) => {
     const fetchTypes = async () => {
       try {
         const response = await axios.get(
+          //lấy danh sách type
           "https://localhost:7089/api/Blog/getListType"
         );
         setTypes(response.data.data);
@@ -113,9 +115,8 @@ const UpdateBlogForm: React.FC<Props> = ({ params }) => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    // Create FormData
     const formData = new FormData();
-    formData.append("id", id); // Replace 'id' with the actual id value if needed
+    formData.append("id", id);
     formData.append("name", name);
     formData.append("idType", idType.toString());
     formData.append("state", state.toString());
@@ -123,13 +124,14 @@ const UpdateBlogForm: React.FC<Props> = ({ params }) => {
     formData.append("note", note);
     formData.append("detail", detail);
 
-    // Add arr to FormData
     arr.forEach((locationId) => {
+      //thêm vào vào arr
       formData.append("arr", locationId.toString());
     });
 
     try {
       const response = await axios.patch(
+        //chỉnh sửa blog
         `https://localhost:7089/api/Blog/Update`,
         formData,
         {
@@ -138,7 +140,7 @@ const UpdateBlogForm: React.FC<Props> = ({ params }) => {
           },
         }
       );
-      console.log("Response:", response.data); // Log the API response for checking
+      console.log("Response:", response.data);
       toast.success("Blog updated successfully");
     } catch (error) {
       console.error("There was an error updating the blog!", error);
@@ -147,6 +149,7 @@ const UpdateBlogForm: React.FC<Props> = ({ params }) => {
   };
 
   const handleClear = () => {
+    //clear
     setName(initialState.name);
     setIdType(initialState.idType);
     setState(initialState.state);
